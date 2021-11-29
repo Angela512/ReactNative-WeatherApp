@@ -56,3 +56,6 @@ Linux, Windows: npm install -g expo-cli
 
 ## 사용 이미지
 
+<img src="https://user-images.githubusercontent.com/57383916/143852490-892c1c84-c34f-4478-b33c-d23eb4809a34.png" width="200" height="400" /><img src="https://user-images.githubusercontent.com/57383916/143852667-3e269cd7-3aa2-4a02-bbb4-83ec3adcd9f8.png" width="200" height="400" />
+
+<img src="https://user-images.githubusercontent.com/57383916/143852723-e8138bc5-ce7b-4a4e-8127-cbd428b1f9c3.png" width="200" height="400" /><img src="https://user-images.githubusercontent.com/57383916/143852776-c833881e-e93f-4c95-ad57-e891a8b440e3.png" width="200" height="400" />
