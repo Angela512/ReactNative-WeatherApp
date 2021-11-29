@@ -66,52 +66,45 @@ export default function App() {
   }, []);
 
   return (
-<ScrollView  
-        horizontal
-        pagingEnabled
-        showsHorizontalScrollIndicator="false"
-        contentContainerStyle={styles.weather}>
+    <ScrollView  
+      horizontal
+      pagingEnabled
+      showsHorizontalScrollIndicator="false"
+      contentContainerStyle={styles.weather}>
 
     {days.map((day, index) => (
-
       <LinearGradient style={styles.gradients} colors={[
         icons[day.weather[0].main].gradient[0],
         icons[day.weather[0].main].gradient[1]
       ]}>
-    <View style={styles.container}>
-          <Text style={styles.cityName}>{city}</Text>
-    </View>
+      <View style={styles.container}>
+        <Text style={styles.cityName}>{city}</Text>
+      </View>
     
-        {days.length === 0 ? (
-          <View style={{ ...styles.day, alignItems: "center" }}>
-            <ActivityIndicator 
-            color="white" 
-            style={{marginTop: 10}} 
-            size="large" />
+      {days.length === 0 ? (
+        <View style={{ ...styles.day, alignItems: "center" }}>
+        <ActivityIndicator 
+          color="white" 
+          style={{marginTop: 10}} 
+          size="large" />
+        </View>
+      ) : (
+        <View key={index} style={styles.day}>
+          <Text style={styles.date}>{new Date(day.dt * 1000).toString().substring(0,10)}</Text>
+          <View style={{flexDirection:"row", alignItems: "center", justifyContent: "space-between", width: "100%"}}>
+            <Text style={styles.temp}>{parseFloat(day.temp.day).toFixed(1)}°</Text>
+            <Fontisto name={icons[day.weather[0].main].iconName} size={68} color="white" />
           </View>
-         ) : (
-          
-           <View key={index} style={styles.day}>
-             <Text style={styles.date}>{new Date(day.dt * 1000).toString().substring(0,10)}</Text>
-             <View style={{flexDirection:"row", alignItems: "center", justifyContent: "space-between", width: "100%"}}>
-                <Text style={styles.temp}>{parseFloat(day.temp.day).toFixed(1)}°</Text>
-                <Fontisto name={icons[day.weather[0].main].iconName} size={68} color="white" />
-            </View>
-             <Text style={styles.description}>{day.weather[0].main}</Text>
-             <Text style={styles.tinyText}>{day.weather[0].description}</Text>
-           </View>
-          
+          <Text style={styles.description}>{day.weather[0].main}</Text>
+          <Text style={styles.tinyText}>{day.weather[0].description}</Text>
+        </View>
           )
           }
-      
       <StatusBar style="light" />
-      
-    
     </LinearGradient>
     ))}
 </ScrollView>
-
-      );
+  );
 }
 
 const styles = StyleSheet.create({
@@ -133,7 +126,6 @@ const styles = StyleSheet.create({
     color: "white"
   },  
   weather: {
-    
   },
   day: {
     width: SCREEN_WIDTH,
@@ -162,6 +154,5 @@ const styles = StyleSheet.create({
   tinyText: {
     fontSize: 20,
     color: "white",
-
   }
 });
