@@ -38,7 +38,8 @@
 1. expo 앱 다운(iOS는 expo go / Android는 expo)
 
 2. 카메라를 켜서 QR코드를 스캔
-expoQR.png
+
+![expoQR](https://user-images.githubusercontent.com/57383916/143851950-cf4831b2-976f-4c55-b3a7-39c296b518ce.png)
 
 ## 조건
 
@@ -46,8 +47,12 @@ expoQR.png
 
 1. Node.js and npm
 
-Windows: visite https://nodejs.org/ko/
+Windows: visit https://nodejs.org/ko/
 
 2. expo CLI
 
 Linux, Windows: npm install -g expo-cli
+
+
+## 사용 이미지
+
