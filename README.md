@@ -37,7 +37,7 @@
 
 1. expo 앱 다운(iOS는 expo go / Android는 expo)
 
-2. https://expo.dev/@angela512/tw![image](https://user-images.githubusercontent.com/57383916/145741000-763d89bc-e7e7-4889-9be9-404416709a78.png)
+2. 링크로 이동 후 QR코드 스캔 https://expo.dev/@angela512/tw
 
 ## 조건
 
