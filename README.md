@@ -37,9 +37,7 @@
 
 1. expo 앱 다운(iOS는 expo go / Android는 expo)
 
-2. 카메라를 켜서 QR코드를 스캔
-
-![expoQR](https://user-images.githubusercontent.com/57383916/143851950-cf4831b2-976f-4c55-b3a7-39c296b518ce.png)
+2. https://expo.dev/@angela512/tw![image](https://user-images.githubusercontent.com/57383916/145741000-763d89bc-e7e7-4889-9be9-404416709a78.png)
 
 ## 조건
 
